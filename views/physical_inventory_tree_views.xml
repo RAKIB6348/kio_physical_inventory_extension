@@ -8,6 +8,12 @@
             <xpath expr="//field[@name='inventory_diff_quantity']" position="attributes">
                 <attribute name="sum">Total Difference</attribute>
             </xpath>
+            <xpath expr="//field[@name='product_uom_id']" position="before">
+                <field name="currency_id" column_invisible="True"/>
+                <field name="rpu" string="RPU" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" readonly="1"/>
+                <field name="total_rpu" string="Total RPU" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" readonly="1"/>
+                <field name="total_rpu_with_vat" string="Total RPU With VAT" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" readonly="1"/>
+            </xpath>
         </field>
     </record>
 </odoo>

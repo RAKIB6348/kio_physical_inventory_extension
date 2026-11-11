@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'kio_branch_inventory'],
+    'depends': ['base', 'kio_branch_inventory', 'kio_inventory_product_extension'],
 
     # always loaded
     'data': [
