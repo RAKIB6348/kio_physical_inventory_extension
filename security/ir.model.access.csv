@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_kio_physical_inventory_extension_kio_physical_inventory_extension,kio_physical_inventory_extension.kio_physical_inventory_extension,model_kio_physical_inventory_extension_kio_physical_inventory_extension,base.group_user,1,1,1,1
