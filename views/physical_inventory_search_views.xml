@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_branch_physical_inventory_quant_search_product_category_groupby" model="ir.ui.view">
+        <field name="name">branch.physical.inventory.quant.search.product.category.groupby</field>
+        <field name="model">stock.quant</field>
+        <field name="inherit_id" ref="kio_branch_inventory.view_branch_physical_inventory_quant_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='group_product']" position="after">
+                <filter name="group_product_category" string="Product Category" context="{'group_by': 'product_categ_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
