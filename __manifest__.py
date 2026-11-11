@@ -26,6 +26,7 @@ Long description of module's purpose
         'views/views.xml',
         'views/templates.xml',
         'views/physical_inventory_search_views.xml',
+        'views/physical_inventory_tree_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

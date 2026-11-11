@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_branch_physical_inventory_quant_tree_difference_sum" model="ir.ui.view">
+        <field name="name">branch.physical.inventory.quant.tree.difference.sum</field>
+        <field name="model">stock.quant</field>
+        <field name="inherit_id" ref="kio_branch_inventory.view_branch_physical_inventory_quant_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='inventory_diff_quantity']" position="attributes">
+                <attribute name="sum">Total Difference</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
